@@ -10,8 +10,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<PicMappContext>(option =>
-    option.UseSqlServer("Server=localhost, 1433;Database=Mapp;User Id=sa;Password=Stockholm-9876;trustServerCertificate=True;"));
+builder.Services.AddDbContext<MappContext>(option =>
+    option.UseSqlServer("MappContext"));
 
 var app = builder.Build();
 
